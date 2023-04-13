@@ -450,51 +450,6 @@ u_csr
     ,.mmu_satp_o(mmu_satp_w)
 );
 
-
-riscv_multiplier
-u_mul
-(
-    // Inputs
-     .clk_i(clk_i)
-    ,.rst_i(rst_i)
-    ,.opcode_valid_i(mul_opcode_valid_w)
-    ,.opcode_opcode_i(mul_opcode_opcode_w)
-    ,.opcode_pc_i(mul_opcode_pc_w)
-    ,.opcode_invalid_i(mul_opcode_invalid_w)
-    ,.opcode_rd_idx_i(mul_opcode_rd_idx_w)
-    ,.opcode_ra_idx_i(mul_opcode_ra_idx_w)
-    ,.opcode_rb_idx_i(mul_opcode_rb_idx_w)
-    ,.opcode_ra_operand_i(mul_opcode_ra_operand_w)
-    ,.opcode_rb_operand_i(mul_opcode_rb_operand_w)
-    ,.hold_i(mul_hold_w)
-
-    // Outputs
-    ,.writeback_value_o(writeback_mul_value_w)
-);
-
-
-riscv_divider
-u_div
-(
-    // Inputs
-     .clk_i(clk_i)
-    ,.rst_i(rst_i)
-    ,.opcode_valid_i(div_opcode_valid_w)
-    ,.opcode_opcode_i(opcode_opcode_w)
-    ,.opcode_pc_i(opcode_pc_w)
-    ,.opcode_invalid_i(opcode_invalid_w)
-    ,.opcode_rd_idx_i(opcode_rd_idx_w)
-    ,.opcode_ra_idx_i(opcode_ra_idx_w)
-    ,.opcode_rb_idx_i(opcode_rb_idx_w)
-    ,.opcode_ra_operand_i(opcode_ra_operand_w)
-    ,.opcode_rb_operand_i(opcode_rb_operand_w)
-
-    // Outputs
-    ,.writeback_valid_o(writeback_div_valid_w)
-    ,.writeback_value_o(writeback_div_value_w)
-);
-
-
 riscv_issue
 #(
      .SUPPORT_REGFILE_XILINX(SUPPORT_REGFILE_XILINX)
