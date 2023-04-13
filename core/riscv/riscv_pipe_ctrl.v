@@ -43,8 +43,8 @@ module riscv_pipe_ctrl
 // Params
 //-----------------------------------------------------------------
 #(
-     parameter SUPPORT_LOAD_BYPASS = 1
-    ,parameter SUPPORT_MUL_BYPASS  = 1
+     parameter SUPPORT_LOAD_BYPASS = 0
+    ,parameter SUPPORT_MUL_BYPASS  = 0
 )
 //-----------------------------------------------------------------
 // Ports

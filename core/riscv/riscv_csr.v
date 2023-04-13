@@ -44,8 +44,8 @@ module riscv_csr
 // Params
 //-----------------------------------------------------------------
 #(
-     parameter SUPPORT_MULDIV   = 1
-    ,parameter SUPPORT_SUPER    = 1
+     parameter SUPPORT_MULDIV   = 0
+    ,parameter SUPPORT_SUPER    = 0
 )
 //-----------------------------------------------------------------
 // Ports

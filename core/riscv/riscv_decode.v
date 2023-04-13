@@ -44,7 +44,7 @@ module riscv_decode
 // Params
 //-----------------------------------------------------------------
 #(
-     parameter SUPPORT_MULDIV   = 1
+     parameter SUPPORT_MULDIV   = 0
     ,parameter EXTRA_DECODE_STAGE = 0
 )
 //-----------------------------------------------------------------

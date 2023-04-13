@@ -43,7 +43,7 @@ module riscv_csr_regfile
 // Params
 //-----------------------------------------------------------------
 #(
-     parameter SUPPORT_MTIMECMP    = 1,
+     parameter SUPPORT_MTIMECMP    = 0,
      parameter SUPPORT_SUPER       = 0
 )
 //-----------------------------------------------------------------
